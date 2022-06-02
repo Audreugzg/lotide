@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
     //console.log("✅✅✅ Assertion Passed: " + actual + "===" + expected);
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -9,21 +9,18 @@ const assertEqual = function(actual, expected) {
 
 };
 
-const countLetters = function(input){
+const countLetters = function (input) {
   const count = {};
   strings = input.replace(/\s+/g, '')
-  for(const letter of strings){
+  for (const letter of strings) {
     count[letter] = 0;
   }
-  for(const letter of strings){
-    for(const words in count){
-      if(words === letter){
-        count[letter] += 1;
-      }
-    }
+  for (const letter of strings) {
+
+    count[letter] += 1;
   }
   return count;
-  
+
 
 };
 
