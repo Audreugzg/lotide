@@ -1,27 +1,30 @@
-const eqArrays = function(sample1,sample2){
-  if (sample1.length === sample2.length) {
-    for (let i = 0; i < sample1.length; i++) {
-      if(sample1[i] !== sample2[i]){
-        return false;
-      } 
+// const eqArrays = function(sample1,sample2){
+//   if (sample1.length === sample2.length) {
+//     for (let i = 0; i < sample1.length; i++) {
+//       if(sample1[i] !== sample2[i]){
+//         return false;
+//       } 
     
-    }
-    return true; 
+//     }
+//     return true; 
     
-  } else {
-    return false;
-  }
+//   } else {
+//     return false;
+//   }
 
-}
+// }
 
-const assertArraysEqual = function(sample1,sample2){
-  if (eqArrays(sample1,sample2)) {
-    console.log(`✅✅✅ two arrays are equal`);
-  } else {
-    console.log(`❌❌❌ two arrays are not equal`);
-  }
+// const assertArraysEqual = function(sample1,sample2){
+//   if (eqArrays(sample1,sample2)) {
+//     console.log(`✅✅✅ two arrays are equal`);
+//   } else {
+//     console.log(`❌❌❌ two arrays are not equal`);
+//   }
 
-}
+// }
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
+
 
 const middle = function(array) {
   mid = [];
@@ -40,8 +43,5 @@ const middle = function(array) {
   }
 }
 
-assertArraysEqual(middle([1, 2, 3]),[2]);// => [2]
-assertArraysEqual(middle([1, 2, 3, 4, 5]),[3]); // => [3]
+module.exports = middle;
 
-assertArraysEqual(middle([1, 2, 3, 4]),[2,3]); // => [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]),[3,4]); // => [3, 4]
