@@ -15,4 +15,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-letterPositions("hello");
+module.exports = letterPositions;
