@@ -14,5 +14,8 @@ const letterPositions = require('./letterPositions');
 const map = require('./map');
 const takeUntil   = require('./takeUntil');
 const without   = require('./without');
+const findKeyByValue   = require('./findKeyByValue');
+const flatten   = require('./flatten');
 
-module.exports = {head,tail,middle,eqArrays,assertArraysEqual,assertEqual,assertObjectsEqual,countLetters,eqObjects,countOnly,findKey,letterPositions,map,takeUntil,without};
+
+module.exports = {head,tail,middle,eqArrays,assertArraysEqual,assertEqual,assertObjectsEqual,countLetters,eqObjects,countOnly,findKey,letterPositions,map,takeUntil,without,findKeyByValue,flatten};

@@ -1,6 +1,10 @@
 const tail = function(array) {
-  let index = array.length;
-  let tail = array[index -1];
+  let tail = [];
+  for (let i = 1; i < array.length; i++) {
+
+    tail.push(array[i]);
+    
+  }
   return tail;
 };
 
